@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TechGear Store</h1>
+        <nav>
+            <button class="filter-btn" data-type="all">Всі товари</button>
+            <button class="filter-btn" data-type="laptop">Ноутбуки</button>
+            <button class="filter-btn" data-type="phone">Смартфони</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog" id="product-grid">
+            <article class="card" data-type="laptop">
+                <img src="https://picsum.photos/id/1/200/150" alt="Laptop">
+                <h3>MacBook Pro</h3>
+                <p>Потужний ноутбук для роботи.</p>
+                <span class="price">55 000 грн</span>
+                <button class="buy-item">Купити</button>
+            </article>
+
+            <article class="card" data-type="phone">
+                <img src="https://picsum.photos/id/160/200/150" alt="Phone">
+                <h3>iPhone 15</h3>
+                <p>Найкраща камера у світі.</p>
+                <span class="price">42 000 грн</span>
+                <button class="buy-item">Купити</button>
+            </article>
+
+            <article class="card" data-type="laptop">
+                <img src="https://picsum.photos/id/0/200/150" alt="Laptop">
+                <h3>Dell XPS</h3>
+                <p>Компактний та надійний.</p>
+                <span class="price">48 000 грн</span>
+                <button class="buy-item">Купити</button>
+            </article>
+
+            <article class="card" data-type="phone">
+                <img src="https://picsum.photos/id/815/200/150" alt="Phone">
+                <h3>Pixel 8</h3>
+                <p>Чистий Android досвід.</p>
+                <span class="price">30 000 грн</span>
+                <button class="buy-item">Купити</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web Project Lab</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
