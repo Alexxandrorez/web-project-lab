@@ -1,0 +1,24 @@
+name: Lab 4 Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: echo "Hello from GitHub Actions robot!"
+
+      - name: Run multi-line scripts
+        run: |
+          echo "Current directory:"
+          ls -la
